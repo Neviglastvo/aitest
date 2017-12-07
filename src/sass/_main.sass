@@ -1,0 +1,232 @@
+$main-accent: #008352
+
+.block
+	background-size: cover
+	background-position: 50% 50%
+	background-repeat: no-repeat 
+	position: relative
+	display: flex
+	&__header
+	&__wrapper
+		display: block
+		margin: auto
+		padding-bottom: 48px
+	&__nobg
+		background-color: #FFF 
+		padding: 44px 0 37px 0 
+		box-shadow: none 
+		z-index: 1
+	&__container
+		display: flex
+		margin: auto
+		max-width: 1200px
+		+r(720)
+			flex-wrap: wrap		
+			justify-content: center
+	&__container-left
+		display: flex
+		padding: 0 60px 
+		flex-direction: column
+		text-align: center
+		+r(720)
+	&__container-right
+		max-width: 823px
+		+r(720)
+			padding: 10px 
+	&__3
+		padding: 62px 0 65px 0
+	&__shadow-bottom
+		box-shadow: 0 5px 18px rgba(0, 0, 0, 0.64)
+		z-index: 2 
+	&__shadow-both
+		box-shadow: 0 3px 21px rgba(0, 0, 0, 0.85)
+		z-index: 2 
+
+.rectangle
+	width: 100% 
+	max-width: 710px
+	opacity: 0.92
+	background-color: #f4f4f4
+	margin: auto
+	padding: 35px 0
+	text-align: center
+	+r(960)
+		margin-right: 10px
+		margin-left: 10px
+	&__header
+		max-width: 953px
+
+.logo
+	display: flex
+	justify-content: center
+	margin-bottom: 52px
+	+r(480)
+		flex-direction: column
+		max-width: 150px
+		justify-content: center
+		margin: auto
+	&__ump
+		padding: 0 20px 
+		color: #000
+		font-family: Georgia
+		font-size: 24px
+		font-weight: 700
+		margin-top: 18px
+		
+.title
+	color: #000
+	font-family: Georgia
+	font-weight: 700
+	font-size: 24px	
+	line-height: 48px
+	text-align: center
+	
+.subtitle
+	font-size: 30px
+	
+.speaker
+	max-width: 1200px
+	width: 100%
+	display: flex
+	margin: auto
+	margin-top: 32px
+	margin-bottom: 45px
+	+r(1000)
+		flex-wrap: wrap
+	&__item
+		width: 50%
+		+r(1000)
+			margin: 10px 10px 50px 10px
+			min-width: 500px
+			width: 100% 
+	&__img
+		float: left
+		margin-right: 23px
+		+r(480)
+			width: 100% 
+			padding: 30px
+	&__title
+		color: #0f8a5c
+		font-size: 24px
+		font-weight: 700
+		line-height: 48px
+	&__text
+		color: #000
+		font-size: 18px
+		font-weight: 400
+		line-height: 30px
+
+.button-reg
+	background-color: $main-accent
+	border-radius: 30px
+	box-shadow: 0 3px 21px rgba(0, 0, 0, 0.48)
+	color: #fff
+	font-family: Georgia
+	font-size: 18px
+	font-weight: 700
+	padding: 20px 42px
+	text-decoration: none
+	position: absolute
+	transition: all 500ms
+	&:hover
+		transform: scale(1.1)
+		transition: all 500ms
+	&__container
+		position: relative
+		height: 60px
+		width: 280px 
+		margin: auto
+	&__bordered
+		border: 3px solid rgb(255, 255, 255)
+		border-radius: 30px
+		margin-bottom: 30px
+
+.text
+	font-size: 18px
+	font-weight: 400
+	line-height: 36px
+	
+.image
+	margin-top: 50px	
+	+r(720)
+		margin: auto
+		width: 100% 
+	
+.link
+	color: $main-accent
+	font-family: Georgia
+	font-size: 18px
+	font-weight: 700
+	line-height: 36px
+	text-decoration: none
+	margin-top: 24px
+	transition: all 500ms
+	&:hover
+		transition: all 500ms
+		text-decoration: underline
+		
+.title-white
+	color: #fff
+	font-family: Georgia
+	font-size: 40px
+	font-weight: 700
+	line-height: 60px
+	text-align: center
+	padding-top: 52px
+	&__subtitle
+		color: #fff
+		font-family: Georgia
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
+		padding: 45px 0 40px 0 
+		
+.input
+	height: 60px
+	background-color: rgba(255, 255, 255, 0.5)
+	border-radius: 30px
+	border: 1px solid rgba(255, 255, 255, 1)
+	margin-bottom: 30px
+	padding-left: 25px
+	+placeholder
+		color: rgba(255, 255, 255, 1)
+		font-family: Georgia
+		font-size: 16px
+		font-weight: 400
+		line-height: 18px
+	&__container
+		max-width: 600px
+		margin: auto
+		display: flex
+		flex-direction: column
+		
+.footer
+	height: 101px
+	background-color: #363636
+	&__container
+		max-width: 1200px
+		margin: auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+		+r(1200)
+			padding: 0 10px
+	
+.social
+	&__img
+		width: 30px
+		height: 30px
+		transition: all 500ms
+		&:hover
+			transform: scale(1.2)
+			transition: all 500ms
+		
+.logo-white
+	width: 147px
+	height: 68px
+	margin-top: 15px
+	transition: all 500ms
+	&:hover
+		transform: scale(1.1)
+		transition: all 500ms
